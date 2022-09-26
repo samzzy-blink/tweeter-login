@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.home-bg{
+    position:absolute;
+    display: flex;
+    width: 100%;
+    height: 90%;
+    background-color: black;
+}
+.bg-img{
+width: 50%;
+background: url(./bg.png);
+height: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.pat-rt h1{
+    color:white;
+   font-size: 60px;
+   font-family: sans-serif;
+   font-weight: 900;
+}
+
+.pat-rt .ps{
+    margin-top: 30px;
+    color:white;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.bg-fm{
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.pat-rt{
+    padding: 40px 50px;
+    width: 100%;
+    background-color:black;
+    /* height: 100%; */
+   
+}
+ 
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+.opacity{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(16, 16, 16);
+    opacity: 0.5;
+}
+.max-width{
+    width: 45%;
+    padding: 30px 10px 20px 10px;
+    background-color: black;
+    border-radius: 35px;
+    /* position: relative; */
+    box-shadow: 0px 1px 2px rgb(136, 155, 207);
+    position: fixed;
+}
+
+.apple{
+    font-weight: 700;
+    border: 1px solid silver;
+    padding: 12px 10px;
+    border-radius: 35px;
+    width:80%;
+    margin: 13px auto;
+    color:black;
+    background-color: white;
+
+}
+.underline{
+ 
+    width: 80%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close{
+    display: flex;justify-content:left; margin-top:-15px;padding-left:12px;cursor: pointer;
+}
+.icon-tweet{
+    margin-top: -34px; margin-bottom: -10px;
+}
+
+.sign-tweet{
+    color: white; font-family:sans-serif;
+}
+
+form{
+    margin-top: 25px;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 80%;
+    margin: auto;
+    position: relative;
+  
+    
+}
+.input-container label{
+    position: absolute;
+    top: 50%;
+    padding-left: 15px;
+    pointer-events: none;
+    transition: 0.4s;
+    color: rgb(164, 155, 155);
+    font-weight: 900;
+   
+}
+.input-text:focus ~ label,.input-pass:focus ~ label,
+.input-text:valid ~ label, .input-pass:valid ~ label{
+    top: 13px;
+    color: cornflowerblue;
+    
+}
+
+
+.input-container .input-text, .input-container .input-pass{
+     outline: none;
+    padding: 20px 15px;
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid silver;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background-color: black;
+   
+}
+.input-pass:focus, .input-text:focus{
+    border: 2px solid cornflowerblue;
+}
+
+.sub-1{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 17px;
+    padding: 12px 5px;
+    width: 80%;
+    margin: 5px auto;
+}
+.sub-2{
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 35px;
+    outline: none;
+    color: white;
+    font-size: 17px;
+    padding: 12px 5px;
+    width: 80%;
+    margin: 5px auto;
+}
+
+
+.pat-rt .apples{
+    padding: 10px;border-radius:30px; background-color:rgb(112, 109, 109);font-size:17px; font-family:sans-serif; font-weight:500; margin-top: 28px; cursor: pointer;
+}
+
+
+.pat-rt .email{
+    padding: 10px;border-radius:30px; background-color:rgb(59, 119, 238);font-size:17px; font-family:sans-serif; font-weight:500;color: white; cursor: pointer;
+}
+
+ .underline-px{
+    width: 100%;
+    height: 1px;
+    margin: 14px auto;
+    background-color:rgb(112, 109, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.underline-px .underline-tx{
+    padding: 0 5px;
+     background-color:
+      black;font-size: 18px; 
+      color: white;
+}
+
+
+
+
+/* media query */
+
+    
+@media(max-width:735px){
+    .pat-rt .ps{
+    font-size: 18px;
+   }
+
+   .pat-rt .apples{
+    font-size:14px;
+    padding: 8px;
+    border: none;
+   }
+
+   .pat-rt .email{
+    font-size:14px;
+    padding: 8px;
+    outline: none;
+    border: none;
+   }
+
+   .pat-rt  h1{
+    margin-top: 30px;
+    font-size: 40px;
+   }
+
+}
+
+@media(max-width:699px){
+    .home-bg{
+        position:absolute;
+        display: block;
+        width: 100%;
+        height: 90%;
+        background-color: black;
+    }
+    .bg-fm{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: flex-start;
+        flex-direction: row;
+        padding-left: 30px;
+    }
+    .bg-img{
+        width: 100%;
+        background: url(./bg.png);
+        height: 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
+
+        .max-width{margin-top: 25px;
+            width: 85%;
+            padding: 25px 10px 20px 10px;
+            background-color: black;
+            border-radius: 25px;
+            position: relative;
+            box-shadow: 0px 1px 2px rgb(136, 155, 207);
+            /* position: fixed; */
+        }
+
+        .input-container label{
+            font-size: 14px;
+        }
+        .apple{
+            font-size: 14px;
+        }
+}
+
+@media(max-width:349px){
+
+    .max-width{
+        width: 100%;
+        padding: 10px 10px 20px 10px;
+        background-color: white;
+        border-radius: 35px;
+        /* position: relative; */
+        box-shadow: 0px 1px 2px rgb(136, 155, 207);
+        position: fixed;
+    }
+    .pat-rt .email{
+        font-size:12px;
+        padding: 8px;
+       }
+       .pat-rt .apples{
+        font-size:12px;
+        padding: 8px;
+       }
+}
